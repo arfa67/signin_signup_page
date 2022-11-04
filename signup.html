@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="logo-icons">
+                <img src="download.jpg">
+            </div>
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button"class="toggle-btn" onclick="login()" href="signin.html">Login In</button>
+                <button type="button"class="toggle-btn"onclick="signup() ">Sign Up</button>
+
+                
+               
+            </div>
+        
+       
+        <form id="signup" class="input-group">
+            <input type="text"class="input-field" placeholder="User ID"required>
+            <input type="text"class="input-field" placeholder="Create Password"required>
+            <input type="text"class="input-field" placeholder="Retype Password"required>
+            <input type="checkbox"class="check-box"><span>I agree to the terms and condition</span>
+            <button type="Submit"class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+       
+    </div>
+    <script>
+        var x = document.getElementsById("login");
+        var y = document.getElementsById("signup");
+        var z = document.getElementsById("btn");
+        function signup(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+            
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+            
+        }
+
+    </script>
+    
+</body>
+</html>
